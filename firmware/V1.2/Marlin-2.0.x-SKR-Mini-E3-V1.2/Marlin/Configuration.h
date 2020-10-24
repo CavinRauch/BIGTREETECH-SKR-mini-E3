@@ -706,7 +706,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } // Ender 3 Extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 423.25 } // BMG Extruder https://www.reddit.com/r/ender3/comments/ey8w3s/esteps_calibration_for_bmgclone_extruder/
 
 /**
  * Default Max Feed Rate (mm/s)
