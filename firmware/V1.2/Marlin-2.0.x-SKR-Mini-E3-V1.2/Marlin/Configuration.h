@@ -707,7 +707,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } // Ender 3 Extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 423.25 } // BMG Extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 431.9 } // BMG Extruder
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1199,7 +1199,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 5
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
@@ -1312,7 +1312,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (20*60)
+#define HOMING_FEEDRATE_XY (25*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 // Validate that endstops are triggered on homing moves
