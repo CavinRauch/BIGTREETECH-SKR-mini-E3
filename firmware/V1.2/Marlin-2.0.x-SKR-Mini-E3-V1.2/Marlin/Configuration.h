@@ -707,7 +707,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } // Ender 3 Extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 431.9 } // BMG Extruder
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 431.9 } // BMG Extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 916 } // BIQU H2
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -910,7 +911,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41, -9, -3.26 }
+#define NOZZLE_TO_PROBE_OFFSET { -41, 0, -2 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
